@@ -5,8 +5,8 @@ const phoneList = ({ phoneList }) => {
   const renderListElement = () => {
     return phoneList.map((eachPhone) => {
       return (
-        <Link to={`/${eachPhone.id}`}>
-          <li key={eachPhone.id} className="catalog__product">
+        <Link key={eachPhone.id}  to={`/${eachPhone.id}`}>
+          <li className="catalog__product">
             <img
               className="catalog__product--img"
               src={eachPhone.image}

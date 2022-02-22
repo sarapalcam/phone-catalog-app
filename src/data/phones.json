@@ -8,9 +8,8 @@
         "image": "https://img.pccomponentes.com/articles/57/578966/196-apple-iphone-13-128gb-productred-libre.jpg",
         "screenSize": "6.1\"",
         "ppp": 460,
-        "backCamera": "12 Mpx",
-        "frontCamera": "12 Mpx",
-        "OS": "iOs 15"
+        "camera": "12 Mpx",
+        "os": "iOs 15"
     },
     {
         "name": "Samsung Galaxy A52s 5G 128GB+6GB RAM",
@@ -20,9 +19,8 @@
         "color": "violet",
         "image": "https://img.pccomponentes.com/articles/51/515207/1356-samsung-galaxy-a52s-5g-6-128gb-violeta-libre.jpg",
         "screenSize": "6.5\"",
-        "backCamera": "64 Mpx",
-        "frontCamera": "32 Mpx",
-        "OS": "Android"
+        "camera": "64 Mpx",
+        "os": "Android"
     },
     {
         "name": "Xiaomi Redmi Note 10 5G 128GB+4GB RAM",
@@ -32,9 +30,7 @@
         "color": "grey",
         "image": "https://img.pccomponentes.com/articles/43/434129/1236-xiaomi-redmi-note-10-pro-6-128gb-gris-libre.jpg",
         "screenSize": "6.5\"",
-        "backCamera": "48 Mpx",
-        "frontCamera": "8 Mpx",
-        "OS": "Android 11"
+        "camera": "48 Mpx",        "os": "Android 11"
     },
     {
         "name": "Huawei P40 Pro 5G 8/256GB",
@@ -45,8 +41,7 @@
         "image": "https://thumb.pccomponentes.com/w-530-530/articles/28/281352/huawei-p40-pro-5g-8-256gb-plata-libre-review.jpg",
         "screenSize": "6.6\"",
         "ppp": 441,
-        "backCamera": "50 Mpx",
-        "frontCamera": "32 Mpx",
-        "OS": "Emui 10 HMS"
+        "camera": "50 Mpx",
+        "os": "Emui 10 HMS"
     }
 ]

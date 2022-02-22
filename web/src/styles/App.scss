@@ -35,13 +35,18 @@
 .main {
   background-color: $scndColor;
   padding: 7% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 300px);
   @include tablet {
-    min-height: calc(100vh - 300px);
     padding: 10% 15%;
+    align-items: center;
+   
   }
   @include desktop {
     min-height: calc(100vh - 350px);
-    padding: 10% 20%;
+    padding: 5% 20%;
   }
 }
 

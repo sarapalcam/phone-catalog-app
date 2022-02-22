@@ -1,7 +1,7 @@
 import "../styles/index.scss";
 import "../styles/App.scss";
 import { useEffect, useState } from "react";
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
 import apiPhones from "../services/fetch";
 import PhoneListContainer from "./PhoneListContainer";
 import PhoneDetailComponent from "./PhoneDetailComponent";
@@ -38,7 +38,9 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1 className="header__title">PhoneApp</h1>
+        <Link to="/">
+          <h1 className="header__title">PhoneApp</h1>
+        </Link>
         <h2 className="header__subtitle">
           Find the latest mobile phones at the best price!
         </h2>
@@ -61,6 +63,7 @@ function App() {
             href="https://zignaly.com/"
             alt="Go to Zignaly website"
             className="footer__text--link"
+            target="_blank"
           >
             Zignaly
           </a>
