@@ -14,3 +14,9 @@ server.listen(serverPort, () => {
 server.get('/phones', (req, res) => {
     res.json(data)
 })
+
+const staticServerPath = "./src/public-react";
+server.use(express.static(staticServerPath));
+
+const staticServerPathImages = "./src/public-phones-images";
+server.use(express.static(staticServerPathImages));

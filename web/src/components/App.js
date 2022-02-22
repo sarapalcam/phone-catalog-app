@@ -1,22 +1,28 @@
 import "../styles/index.scss";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
-import apiPhones from "../services/fetch";
+// import apiPhones from "../services/fetch";
 import PhoneListContainer from "./PhoneListContainer";
 import PhoneDetailComponent from "./PhoneDetailComponent";
 import Loader from "./Loader";
+import { useSelector, useDispatch } from 'react-redux';
+import getList from '../features/slice'
 
 function App() {
-  const [phoneList, setPhoneList] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  // const [phoneList, setPhoneList] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    setIsLoading(true);
-    apiPhones().then((data) => {
-      setPhoneList(data);
-      setIsLoading(false);
-    });
-  }, []);
+  // useEffect(() => {
+  //   setIsLoading(true);
+  //   apiPhones().then((data) => {
+  //     setPhoneList(data);
+  //     setIsLoading(false);
+  //   });
+  // }, []);
+
+
+    const phoneList = useSelector((state) => state.getList.value);
+    useDispatch();
 
   const routeData = useRouteMatch("/:phoneId");
 
@@ -42,8 +48,8 @@ function App() {
           <PhoneDetailComponent selectedPhone={getPhonesRoute()} />
         </Route>
         <Route>
-        <Loader isLoading={isLoading} />
-          <PhoneListContainer exact path="/" phoneList={phoneList}/>
+        {/* <Loader isLoading={isLoading} /> */}
+          <PhoneListContainer exact path="/" />
         </Route>
       </Switch>
     </div>

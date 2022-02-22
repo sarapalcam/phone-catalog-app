@@ -3,7 +3,8 @@
         "phone": "iPhone12",
         "price": 1000,
         "id": "1",
-        "color": "blue"
+        "color": "blue",
+        "image": ""
     },
     {
         "phone": "Samsung",
