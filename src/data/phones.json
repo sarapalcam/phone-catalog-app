@@ -1,0 +1,14 @@
+[
+    {
+        "phone": "iPhone12",
+        "price": 1000,
+        "id": "1",
+        "color": "blue"
+    },
+    {
+        "phone": "Samsung",
+        "price": 850,
+        "id": "2",
+        "color": "gray"
+    }
+]
