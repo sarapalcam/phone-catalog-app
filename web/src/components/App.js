@@ -1,4 +1,5 @@
 import "../styles/index.scss";
+import "../styles/App.scss";
 import { useEffect, useState } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import apiPhones from "../services/fetch";
@@ -36,16 +37,36 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Phone App</h1>
-      <Switch>
-        <Route exact path="/:phoneId">
-          <PhoneDetailComponent selectedPhone={getPhonesRoute()} />
-        </Route>
-        <Route>
-        <Loader isLoading={isLoading} />
-          <PhoneListContainer exact path="/" phoneList={phoneList}/>
-        </Route>
-      </Switch>
+      <header className="header">
+        <h1 className="header__title">PhoneApp</h1>
+        <h2 className="header__subtitle">
+          Find the latest mobile phones at the best price!
+        </h2>
+      </header>
+      <main className="main">
+        <Switch>
+          <Route exact path="/:phoneId">
+            <PhoneDetailComponent selectedPhone={getPhonesRoute()} />
+          </Route>
+          <Route>
+            <Loader isLoading={isLoading} />
+            <PhoneListContainer exact path="/" phoneList={phoneList} />
+          </Route>
+        </Switch>
+      </main>
+      <footer className="footer">
+        <small className="footer__text">
+          Developed by Sara Palomo Campesino for{" "}
+          <a
+            href="https://zignaly.com/"
+            alt="Go to Zignaly website"
+            className="footer__text--link"
+          >
+            Zignaly
+          </a>
+          . 2022
+        </small>
+      </footer>
     </div>
   );
 }
