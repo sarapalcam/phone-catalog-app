@@ -1,10 +1,8 @@
 import "../styles/index.scss";
 import "../styles/App.scss";
-// import { useEffect, useState } from "react";
-import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import PhoneListContainer from "./PhoneListContainer";
 import PhoneDetailComponent from "./PhoneDetailComponent";
-// import Loader from "./Loader";
 
 function App() {
 
@@ -24,7 +22,6 @@ function App() {
             <PhoneDetailComponent />
           </Route> 
           <Route>
-            {/* <Loader isLoading={isLoading} /> */}
             <PhoneListContainer exact path="/" />
           </Route>
         </Switch>

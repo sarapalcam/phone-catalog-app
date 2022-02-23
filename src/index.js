@@ -11,10 +11,12 @@ server.listen(serverPort, () => {
   console.log(`Server listening at http://localhost:${serverPort}`);
 });
 
+//Success error
 server.get('/phones', (req, res) => {
     res.json(data)
 })
 
+//run buid
 const staticServerPath = "./src/public-react";
 server.use(express.static(staticServerPath));
 

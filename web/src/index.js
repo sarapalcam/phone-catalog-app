@@ -12,7 +12,6 @@ ReactDOM.render(
         <App />
       </HashRouter>
       </Provider>
-    
     </React.StrictMode>,
   document.getElementById("root")
 );

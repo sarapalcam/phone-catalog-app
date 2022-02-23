@@ -6,10 +6,3 @@ export const setPhones = (phones) => {
         payload: phones
     }
 };
-
-export const selectedPhone = (phone) => {
-    return {
-        type: ActionTypes.SELECTED_PHONE,
-        payload: phone
-    }
-};

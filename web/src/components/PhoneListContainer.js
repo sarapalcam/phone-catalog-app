@@ -7,7 +7,6 @@ import { setPhones } from "../redux/actions/actions";
 
 const PhoneList = () => {
   const phones = useSelector((state) => state.allPhones.phones);
-  //const { id, image, name, price, currency } = phones[0];
   const dispatch = useDispatch();
 
   const fetchPhones = async () => {
@@ -44,9 +43,7 @@ const PhoneList = () => {
 
   const renderListElement = () => {
     return (
-      // <Link key={id} to={`/${id}`}>
       <>{renderPhones}</>
-      // </Link>
     );
   };
 
