@@ -1,3 +1,80 @@
-// @import './core/variables.scss';
-// @import './core/mixins.scss';
+@import "./core/variables.scss";
+@import "./core/mixins.scss";
 
+.header {
+  background-color: $mainColor;
+  height: 200px;
+  padding: 7% 10%;
+  @include tablet {
+    padding: 7% 15%;
+  }
+  @include desktop {
+    height: 250px;
+    padding: 3% 20%;
+  }
+  &__title {
+    color: $scndColor;
+    font-family: $scndFont;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    @include desktop {
+      font-size: 50px;
+    }
+  }
+  &__subtitle {
+    color: $scndColor;
+    font-family: $scndFont;
+    font-size: 24px;
+    @include desktop {
+      font-size: 32px;
+    }
+  }
+}
+
+.main {
+  background-color: $scndColor;
+  padding: 7% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 300px);
+  @include tablet {
+    padding: 10% 15%;
+    align-items: center;
+   
+  }
+  @include desktop {
+    min-height: calc(100vh - 350px);
+    padding: 5% 20%;
+  }
+}
+
+.footer {
+  background-color: $mainColor;
+  height: 100px;
+  padding: 7% 10%;
+  text-align: center;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    text-align: left;
+  }
+  @include desktop {
+    padding: 2% 20%;
+  }
+  &__text {
+    color: $scndColor;
+    font-family: $scndFont;
+    font-size: 12px;
+    text-align: center;
+    @include desktop {
+        font-size: 16px;
+    }
+    &--link {
+      color: $scndColor;
+      font-weight: 600;
+    }
+  }
+}

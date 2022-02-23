@@ -18,5 +18,3 @@ server.get('/phones', (req, res) => {
 const staticServerPath = "./src/public-react";
 server.use(express.static(staticServerPath));
 
-const staticServerPathImages = "./src/public-phones-images";
-server.use(express.static(staticServerPathImages));

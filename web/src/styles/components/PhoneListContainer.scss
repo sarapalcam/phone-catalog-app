@@ -1,0 +1,55 @@
+@import "../core/mixins.scss";
+@import "../core/variables.scss";
+
+.catalog {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  &__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    @include tablet {
+      max-width: 220px;
+    }
+    @include desktop {
+      max-width: 300px;
+      margin: 30px;
+    }
+    &--img {
+      width: 200px;
+      margin-bottom: 10px;
+      @include desktop {
+        margin-bottom: 25px;
+        width: 325px;
+      }
+    }
+    &--name {
+      color: $mainTextColor;
+      font-family: $mainFont;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 5px;
+      @include desktop {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+    }
+    &--price {
+      color: $mainTextColor;
+      font-family: $mainFont;
+      font-size: 20px;
+      text-align: center;
+      @include desktop {
+        font-size: 28px;
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
