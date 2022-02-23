@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../styles/components/PhoneListContainer.scss";
 
 const phoneList = ({ phoneList }) => {
@@ -24,6 +25,25 @@ const phoneList = ({ phoneList }) => {
   };
 
   return <ul className="catalog">{renderListElement()}</ul>;
+};
+
+phoneList.defaultProps = {
+  phoneList: {
+    name: "Name of te phone model",
+    price: 0,
+    currency: "€",
+    id: "name-of-the-phone-model",
+    color: "undefined",
+    image: "undefined",
+    screenSize: "undefined",
+    ppp: "undefined",
+    camera: "undefined",
+    os: "undefined"
+  }
+}
+
+phoneList.propTypes = {
+  phoneList: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default phoneList;

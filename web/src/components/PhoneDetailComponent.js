@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../styles/components/PhoneDetailComponent.scss";
 
 const phoneDetail = ({ selectedPhone }) => {
@@ -24,16 +25,14 @@ const phoneDetail = ({ selectedPhone }) => {
         </p>
         <i className="fas fa-mobile-alt detail__icon">
           <p className="detail__icon--text">
-            Screen: {selectedPhone.screenSize} {selectedPhone.ppp}ppp
+            Screen: {selectedPhone.screenSize} {selectedPhone.ppp}
           </p>
         </i>
         <i className="fas fa-camera-alt detail__icon">
           <p className="detail__icon--text">Camera: {selectedPhone.camera}.</p>
         </i>
         <i className="fas fa-palette detail__icon">
-          <p className="detail__icon--text">
-            Color: {selectedPhone.color}
-          </p>
+          <p className="detail__icon--text">Color: {selectedPhone.color}</p>
         </i>
         <i className="fas fa-robot detail__icon">
           <p className="detail__icon--text">OS: {selectedPhone.os}</p>
@@ -41,6 +40,25 @@ const phoneDetail = ({ selectedPhone }) => {
       </div>
     </div>
   );
+};
+
+phoneDetail.defaultProps = {
+  phoneList: {
+    name: "Name of te phone model",
+    price: 0,
+    currency: "€",
+    id: "undefined",
+    color: "undefined",
+    image: "undefined",
+    screenSize: "undefined",
+    ppp: "undefined",
+    camera: "undefined",
+    os: "undefined"
+  }
+}
+
+phoneDetail.propTypes = {
+  selectedPhone: PropTypes.object,
 };
 
 export default phoneDetail;

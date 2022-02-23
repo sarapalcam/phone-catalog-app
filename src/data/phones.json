@@ -1,47 +1,48 @@
 [
-    {
-        "name": "Apple iPhone 13 Pro 1TB",
-        "price": 1669,
-        "currency": "€",
-        "id": "iphone-13-pro-1tb",
-        "color": "red",
-        "image": "https://img.pccomponentes.com/articles/57/578966/196-apple-iphone-13-128gb-productred-libre.jpg",
-        "screenSize": "6.1\"",
-        "ppp": 460,
-        "camera": "12 Mpx",
-        "os": "iOs 15"
-    },
-    {
-        "name": "Samsung Galaxy A52s 5G 128GB+6GB RAM",
-        "price": 339,
-        "currency": "€",
-        "id": "samsung-galaxy-a52s-5g",
-        "color": "violet",
-        "image": "https://img.pccomponentes.com/articles/51/515207/1356-samsung-galaxy-a52s-5g-6-128gb-violeta-libre.jpg",
-        "screenSize": "6.5\"",
-        "camera": "64 Mpx",
-        "os": "Android"
-    },
-    {
-        "name": "Xiaomi Redmi Note 10 5G 128GB+4GB RAM",
-        "price": 219,
-        "currency": "€",
-        "id": "xiaomi-redmi-note-10-5g",
-        "color": "grey",
-        "image": "https://img.pccomponentes.com/articles/43/434129/1236-xiaomi-redmi-note-10-pro-6-128gb-gris-libre.jpg",
-        "screenSize": "6.5\"",
-        "camera": "48 Mpx",        "os": "Android 11"
-    },
-    {
-        "name": "Huawei P40 Pro 5G 8/256GB",
-        "price": 779,
-        "currency": "€",
-        "id": "huawei-p40-pro-5g",
-        "color": "silver",
-        "image": "https://thumb.pccomponentes.com/w-530-530/articles/28/281352/huawei-p40-pro-5g-8-256gb-plata-libre-review.jpg",
-        "screenSize": "6.6\"",
-        "ppp": 441,
-        "camera": "50 Mpx",
-        "os": "Emui 10 HMS"
-    }
+  {
+    "name": "Apple iPhone 13 Pro 1TB",
+    "price": 1669,
+    "currency": "€",
+    "id": "iphone-13-pro-1tb",
+    "color": "red",
+    "image": "https://img.pccomponentes.com/articles/57/578966/196-apple-iphone-13-128gb-productred-libre.jpg",
+    "screenSize": "6.1\"",
+    "ppp": "460ppp",
+    "camera": "12 Mpx",
+    "os": "iOs 15"
+  },
+  {
+    "name": "Samsung Galaxy A52s 5G 128GB+6GB RAM",
+    "price": 339,
+    "currency": "€",
+    "id": "samsung-galaxy-a52s-5g",
+    "color": "violet",
+    "image": "https://img.pccomponentes.com/articles/51/515207/1356-samsung-galaxy-a52s-5g-6-128gb-violeta-libre.jpg",
+    "screenSize": "6.5\"",
+    "camera": "64 Mpx",
+    "os": "Android"
+  },
+  {
+    "name": "Xiaomi Redmi Note 10 5G 128GB+4GB RAM",
+    "price": 219,
+    "currency": "€",
+    "id": "xiaomi-redmi-note-10-5g",
+    "color": "grey",
+    "image": "https://img.pccomponentes.com/articles/43/434129/1236-xiaomi-redmi-note-10-pro-6-128gb-gris-libre.jpg",
+    "screenSize": "6.5\"",
+    "camera": "48 Mpx",
+    "os": "Android 11"
+  },
+  {
+    "name": "Huawei P40 Pro 5G 8/256GB",
+    "price": 779,
+    "currency": "€",
+    "id": "huawei-p40-pro-5g",
+    "color": "silver",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/28/281352/huawei-p40-pro-5g-8-256gb-plata-libre-review.jpg",
+    "screenSize": "6.6\"",
+    "ppp": "441ppp",
+    "camera": "50 Mpx",
+    "os": "Emui 10 HMS"
+  }
 ]

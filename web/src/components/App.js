@@ -28,9 +28,16 @@ function App() {
     );
     return (
       selectedPhone || {
-        phone: "That phone does not exists :(",
+        phone: "That phone does not exist :(",
         price: "No price available",
+        currency: "€",
         id: "undefined",
+        color: "undefined",
+        image: "undefined",
+        screenSize: "undefined",
+        ppp: "undefined",
+        camera: "undefined",
+        os: "undefined",
       }
     );
   };
@@ -64,6 +71,7 @@ function App() {
             alt="Go to Zignaly website"
             className="footer__text--link"
             target="_blank"
+            rel="noreferrer"
           >
             Zignaly
           </a>

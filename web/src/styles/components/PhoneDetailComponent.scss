@@ -9,7 +9,7 @@
     flex-direction: row;
     align-items: center;
   }
- 
+
   &__imgContainer {
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: 15px;
+
     @include tablet {
       font-size: 22px;
       margin-bottom: 25px;
@@ -29,6 +30,11 @@
       font-family: $mainFont;
       font-size: 18px;
       font-weight: 400;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        color: $mainColor;
+        transform: translateX(-2px);
+      }
       @include tablet {
         font-size: 22px;
       }
