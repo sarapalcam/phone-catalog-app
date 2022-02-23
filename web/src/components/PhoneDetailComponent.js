@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 import "../styles/components/PhoneDetailComponent.scss";
 
-const phoneDetail = ({ selectedPhone }) => {
+const PhoneDetail = ({ selectedPhone }) => {
+
+  const {phoneId} = useParams();
+  console.log(phoneId);
+
   return (
     <div className="detail">
       <div className="detail__imgContainer">
@@ -43,4 +50,4 @@ const phoneDetail = ({ selectedPhone }) => {
   );
 };
 
-export default phoneDetail;
+export default PhoneDetail;

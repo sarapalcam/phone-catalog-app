@@ -1,4 +1,5 @@
 import "../styles/components/Loader.scss";
+import React from "react";
 
 const Loader = ({ isLoading }) => {
   return isLoading ? (
